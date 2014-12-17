@@ -1,0 +1,29 @@
+<h1>Listing examples</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Description</th>
+      <th>Project</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @examples.each do |example| %>
+      <tr>
+        <td><%= example.image %></td>
+        <td><%= example.description %></td>
+        <td><%= example.project_id %></td>
+        <td><%= link_to 'Show', example %></td>
+        <td><%= link_to 'Edit', edit_example_path(example) %></td>
+        <td><%= link_to 'Destroy', example, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Example', new_example_path %>
