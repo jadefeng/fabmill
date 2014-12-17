@@ -1,21 +1,24 @@
-<h1>All Users</h1>
+<div class="container">
 
-    <% @users.each do |user| %>
-      <div class="userBox">
-        <p><%= user.name %></p>
-        <p><%= user.maker %></p>
-        <p><%= user.thinker %></p>
-        <p><%= user.location %></p>
-        <p><%= user.avatar %></p>
-        <p><%= user.description %></p>
-        <p><%= user.email %></p>
-        <p><%= link_to 'Show', user %></p>
-        <p><%= link_to 'Edit', edit_user_path(user) %></p>
-        <p><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></p>
-      </div>
-    <% end %>
+    <h1>All Users</h1>
+
+        <% @users.each do |user| %>
+          <div class="userBox">
+            <p><%= user.name %></p>
+            <p><%= user.maker %></p>
+            <p><%= user.thinker %></p>
+            <p><%= user.location %></p>
+            <p><%= user.avatar %></p>
+            <p><%= user.description %></p>
+            <p><%= user.email %></p>
+            <p><%= link_to 'Show', user %></p>
+            <p><%= link_to 'Edit', edit_user_path(user) %></p>
+            <p><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+          </div>
+        <% end %>
 
 
-<br>
+    <br>
 
-<%= link_to 'New User', new_user_path %>
+    <%= link_to 'New User', new_user_path %>
+</div>

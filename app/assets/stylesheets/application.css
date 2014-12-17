@@ -10,6 +10,7 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require font-awesome
  *= require_tree .
  *= require_self
  */
@@ -20,7 +21,7 @@
 
 body {
   margin: 0;
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 nav {
@@ -95,3 +96,16 @@ h1, h2, h3 {
   text-align: center
 }
 
+.header, .header a {
+  color: white;
+}
+
+.img-portfolio {
+  width: 400px;
+  height: 300px;
+}
+
+.bg-primary {
+  color: #fff;
+  background-color: #32cb97;
+}

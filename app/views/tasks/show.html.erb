@@ -1,21 +1,23 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+	<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @task.name %>
-</p>
-
-
-<p>
-  <strong>Description:</strong>
-  <%= @task.description %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @task.price %>
-</p>
+	<p>
+	  <strong>Name:</strong>
+	  <%= @task.name %>
+	</p>
 
 
-<%= link_to 'Edit', edit_task_path(@task) %> |
-<%= link_to 'Back', tasks_path %>
+	<p>
+	  <strong>Description:</strong>
+	  <%= @task.description %>
+	</p>
+
+	<p>
+	  <strong>Price:</strong>
+	  <%= @task.price %>
+	</p>
+
+
+	<%= link_to 'Edit', edit_task_path(@task) %> |
+	<%= link_to 'Back', tasks_path %>
+</div>
