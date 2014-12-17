@@ -38,3 +38,15 @@ gem 'bcrypt', '~> 3.1.7'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+group :development do
+  gem 'pry-rails'
+  # gem 'pry-debugger'
+  gem 'pry-stack_explorer'
+
+  gem 'annotate'
+
+  gem 'quiet_assets'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
+end

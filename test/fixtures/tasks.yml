@@ -1,11 +1,13 @@
 # == Schema Information
 #
-# Table name: examples
+# Table name: tasks
 #
 #  id          :integer          not null, primary key
-#  image       :string(255)
+#  name        :string(255)
+#  thinker_id  :integer
 #  description :text
-#  project_id  :integer
+#  maxCost     :float
+#  maker_id    :integer
 #  created_at  :datetime
 #  updated_at  :datetime
 #
@@ -13,11 +15,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  image: MyString
+  name: MyString
+  thinker_id: 1
   description: MyText
-  project_id: 1
+  maxCost: 1.5
+  maker_id: 1
 
 two:
-  image: MyString
+  name: MyString
+  thinker_id: 1
   description: MyText
-  project_id: 1
+  maxCost: 1.5
+  maker_id: 1

@@ -13,37 +13,42 @@
 
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :password_digest %><br>
-    <%= f.text_field :password_digest %>
-  </div>
-  <div class="field">
-    <%= f.label :maker %><br>
-    <%= f.check_box :maker %>
-  </div>
-  <div class="field">
-    <%= f.label :thinker %><br>
-    <%= f.check_box :thinker %>
-  </div>
-  <div class="field">
-    <%= f.label :location %><br>
-    <%= f.text_field :location %>
-  </div>
-  <div class="field">
-    <%= f.label :avatar %><br>
-    <%= f.text_field :avatar %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_area :description %>
+    <%= f.text_field :name, :class => 'form-control', :autofocus => true %>
   </div>
   <div class="field">
     <%= f.label :email %><br>
-    <%= f.text_field :email %>
+    <%= f.text_field :email, :class => 'form-control' %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br>
+    <%= f.password_field :password, :class => 'form-control' %>
+  </div>
+  <div class="field">
+    <%= f.label :password_confirmation %><br>
+    <%= f.password_field :password_confirmation, :class => 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= f.label :maker %><br>
+    <%= f.check_box :maker, :class => 'form-control' %>
+  </div>
+  <div class="field">
+    <%= f.label :thinker %><br>
+    <%= f.check_box :thinker, :class => 'form-control' %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br>
+    <%= f.text_field :location, :class => 'form-control' %>
+  </div>
+  <div class="field">
+    <%= f.label :avatar %><br>
+    <%= f.text_field :avatar, :class => 'form-control' %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description, :class => 'form-control' %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <input type='submit'> 
   </div>
 <% end %>
